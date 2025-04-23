@@ -1,0 +1,505 @@
+
+<ion-content>
+ 
+  <div id="wrap">
+    <ion-header>
+      <div id="intranet">
+        
+         
+        <ul>
+          <li> <!-- BIenvenido : {{logeado.user.username}}   -->  </li>
+
+    
+         
+          <li >Cerrar Sesion</li>
+          <li><img src="../../../assets/img/logout.png" (click)="logOut()"></li>
+        </ul>
+        <div class="logo-intranet"> <img src="../../../assets/img/logo-footer.png"></div>
+        
+      </div><!------cierre div intranet header-------->
+    </ion-header>
+
+   <!--  <div id="menu-lateral">
+    </div>---CIERRE MENU LATERAL------> 
+    <h1>Administrador Módulos</h1>
+    <div class="container">
+      <div class="content">
+        <input type="radio" name="slider"  checked id="modempresa">
+        <input type="radio" name="slider"  id="modcatalogo">
+        <input type="radio" name="slider" id="modcotizacion">
+        <input type="radio" name="slider" id="modcredencial">
+      
+        <input type="radio" name="slider" id="modmobra">
+        <input type="radio" name="slider" id="modmaterial">
+        <input type="radio" name="slider" id="modproveedor">
+        <input type="radio" name="slider" id="modreporte">
+        <input type="radio" name="slider" id="modtransporte">
+        <div class="list">
+          <label for="modcatalogo" class="modcatalogo">
+          <i class="fas fa-modcatalogo"></i>
+          <span class="title">Módulo Catálogo</span>
+        </label>
+        <label for="modcotizacion" class="modcotizacion">
+          <span class="icon"><i class="fas fa-modcotizacion"></i></span>
+          <span class="title">Módulo Cotización</span>
+        </label>
+        <label for="modcredencial" class="modcredencial">
+          <span class="icon"><i class="far fa-envelope"></i></span>
+          <span class="title">Módulo Credencial</span>
+        </label>
+        <label for="modempresa" class="modempresa">
+          <span class="icon"><i class="fas fa-modempresa"></i></span>
+          <span  (click)="botonEmpresas()" class="title">Módulo Empresa</span>
+        </label>
+        <label for="modmobra" class="modmobra">
+          <span class="icon"><i class="far fa-modmobra"></i></span>
+          <span class="title">Módulo Mano obra</span>
+        </label>
+        
+        <label for="modmaterial" class="modmaterial">
+          <span class="icon"><i class="far fa-modmaterial"></i></span>
+          <span class="title" (click)="botonMateriales()">Módulo Material</span>
+        </label>
+        
+        <label for="modproveedor" class="modproveedor">
+          <span class="icon"><i class="far fa-modproveedor"></i></span>
+          <span class="title">Módulo Proveedor</span>
+        </label>
+        
+        <label for="modreporte" class="modreporte">
+          <span class="icon"><i class="far fa-modreporte"></i></span>
+          <span class="title">Módulo Reporte</span>
+        </label>
+        
+        <label for="modtransporte" class="modtransporte">
+          <span class="icon"><i class="far fa-modtransporte"></i></span>
+          <span class="title">Módulo Transporte</span>
+        </label>
+        
+        <div class="slider"></div>
+      </div>
+
+        <div class="text-content">
+          <div class="modcatalogo text">
+            <div class="title">Catálogo</div>
+            <button class="btn-agre" routerLink="/agregar-catalogo">AGREGAR NUEVO</button>
+            
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+      <button id="btn-buscar">BUSCAR</button>
+    </div>
+    <table class="tabla-contenido">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Imagen</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Producto 1</td>
+          <td>Descripción del producto 1</td>
+          <td><img src="../../../assets/img/ventana-termo.jpg" alt="Imagen del producto 1"></td>
+          <td>
+            <button class="btn-editar">MODIFICAR</button>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Producto 2</td>
+          <td>Descripción del producto 2</td>
+          <td><img src="../../../assets/img/Ventana_Monolitica_Alumnio.jpg" alt="Imagen del producto 2"></td>
+          <td>
+            <a routerLink="/modificar-catalogo" class="btn-editar">MODIFICAR</a>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>
+        <!-- Agregar más filas según sea necesario -->
+      </tbody>
+    </table>
+          </div>
+          <div class="modcotizacion text">
+            <div class="title">Cotización</div>
+            <button class="btn-agre" routerLink="/agregar-cotizacion">AGREGAR NUEVO</button>
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+      <button id="btn-buscar">BUSCAR</button>
+    </div>
+    <table class="tabla-contenido">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Empresa</th>
+          <th>Cantidad</th>
+          <th>M2</th>
+          <th>Total</th>
+          <th>Estado</th>
+          <th>Descargar</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      
+
+        <tr>
+          <td></td>
+          <td>Empresa 1</td>
+          <td>20</td>
+          <td>50</td>
+          <td>1.000.000</td>
+          <td>Proceso</td>
+          <td><img src="../../../assets/img/pdf.png"></td>
+          <td>
+            <button class="btn-editar">DETALLE</button>
+            
+          </td>
+        </tr>
+        
+        <!-- Agregar más filas según sea necesario -->
+      </tbody>
+    </table>
+          </div>
+          <div class="modcredencial text">
+            <div class="title">Credencial</div>
+            <button class="btn-agre" routerLink="/agregar-credencial">AGREGAR NUEVO</button>
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+      <button id="btn-buscar">BUSCAR</button>
+    </div>
+    <table class="tabla-contenido">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Rut</th>
+          <th>Correo</th>
+          <th>Telefono</th>
+          <th>Permiso</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+        <tr>
+          <td>1</td>
+          <td>Pedro</td>
+          <td>Mendez</td>
+          <td>20.000.444-1</td>
+          <td>mendez@gmail.com</td>
+          <td>988746371</td>
+          <td>Administrador</td>
+          <td>
+            <a routerLink="/modificar-credencial" class="btn-editar">MODIFICAR</a>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>       
+      
+    </table>    
+          </div>
+          <div class="modempresa text">
+            <div class="title">Empresa</div>         
+    
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+      <button id="btn-buscar" >BUSCAR</button>
+    </div>
+    <table class="tabla-contenido">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre Empresa</th>
+          <th>Rut</th>
+          <th>Correo</th>
+          <th>Teléfono</th>
+          <th>Dirección</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let empresa of empresas">
+        <td>{{ empresa.id}}</td>
+        <td>{{ empresa.nom_empresa}}</td>
+        <td>{{ empresa.rut}}</td>
+        <td>{{ empresa.correo}}</td>
+        <td>{{ empresa.telefono}}</td>
+        <td>{{ empresa.direccion}}</td>
+        <td>
+          <!-- <button class="btn-editar">MODIFICAR</button> -->
+          <a [routerLink]="'/modificar-empresa/' + empresa.id"class="btn-editar">MODIFICAR</a>
+          <button class="btn-borrar" (click)="DeleteEmp(empresa.id)" >BORRAR</button>
+        </td>
+       
+      </tr>
+        <!-- <tr>
+          <td>1</td>
+          <td>Empresa 1</td>          
+          <td>70.258.356-4</td>
+          <td>empresa1@gmail.com</td>
+          <td>988746371</td>
+          <td>Callesita #1234</td>
+          <td>
+            <button class="btn-editar">MODIFICAR</button>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>      -->
+    </table>
+          </div>
+          <div class="modmobra text">
+            <div class="title">Mano de Obra</div>
+            <button class="btn-agre" routerLink="/agregar-mano-obra">AGREGAR NUEVO</button>
+            <div class="buscador">
+              <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+              <button id="btn-buscar">BUSCAR</button>
+            </div>
+            <table class="tabla-contenido">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Primer Apellido</th>
+                  <th>Rut</th>
+                  <th>Correo</th>
+                  <th>Telefono</th>
+                  <th>Especialidad</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+                <tr>
+                  <td>1</td>
+                  <td>Pedro</td>
+                  <td>Mendez</td>
+                  <td>20.000.444-1</td>
+                  <td>mendez@gmail.com</td>
+                  <td>988746371</td>
+                  <td>Armador</td>
+                  <td>
+                    <button class="btn-editar" routerLink="/modificar-mano-obra">MODIFICAR</button>
+                    <button class="btn-borrar">BORRAR</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Juan</td>
+                  <td>Gonzalez</td>
+                  <td>18.774.111-2</td>
+                  <td>juansito@gmail.com</td>
+                  <td>974625483</td>
+                  <td>Cortador</td>
+                  <td>
+                    <button class="btn-editar " routerLink="/modificar-mano-obra">MODIFICAR</button>
+                    <button class="btn-borrar">BORRAR</button>
+                  </td>
+                </tr>
+                <!-- Agregar más filas según sea necesario -->
+        
+            </table>
+          </div>
+          <div class="modmaterial text">
+            <div class="title">Material</div>
+            <button class="btn-agre" routerLink="/agregar-material">AGREGAR NUEVO</button>
+            <div class="buscador">
+              <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+              <button id="btn-buscar">BUSCAR</button>
+            </div>
+            <table class="tabla-contenido">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Descripción</th>
+                  <th>Tipo</th>
+                  <th>Precio M2</th>         
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let material of materiales">
+        <td>{{ material.id}}</td>
+        <td>{{ material.nom_material}}</td>
+        <td>{{ material.descripcion}}</td>
+        <td>{{ material.tipo}}</td>
+        <td>{{ material.precio}}</td>
+        
+        <td>
+          <!-- <button class="btn-editar">MODIFICAR</button> -->
+          <a class="btn-editar" [routerLink]="'/modificar-material/' + material.id">MODIFICAR</a>
+
+          <button class="btn-borrar" (click)="DeleteMat(material.id)">BORRAR</button>
+        </td>
+       
+      </tr>
+        
+              </tbody>
+            </table>    
+          </div>
+          <div class="modproveedor text">
+            <div class="title">Proveedor</div>
+            <button class="btn-agre" routerLink="/agregar-proveedor">AGREGAR NUEVO</button>
+            <div class="buscador">
+              <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+              <button id="btn-buscar">BUSCAR</button>
+            </div>
+            <table class="tabla-contenido">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre Empresa</th>
+                  <th>Correo</th>
+                  <th>Teléfono</th>
+                  <th>Dirección</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Materiales SPA</td>
+                  <td>SpaVentana@gmail.com</td>
+                  <td>+56995588484</td>
+                  <td>Av.Providencia</td>
+                  <td>
+                    <button class="btn-editar" routerLink="/modificar-proveedor">MODIFICAR</button>
+                    <button class="btn-borrar">BORRAR</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Materiales Construcciones</td>
+                  <td>ContructoraSPA@gmail.com</td>
+                  <td>+56993747292</td>
+                  <td>Av.Renca</td>
+                  <td>
+                    <button class="btn-editar" >MODIFICAR</button>
+                    <button class="btn-borrar">BORRAR</button>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="modreporte text">
+            <div class="title">Reporte</div>
+            
+            <button class="btn-agre" routerLink="/agregar-reporte">AGREGAR NUEVO</button>
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+      <button id="btn-buscar">BUSCAR</button>
+    </div>
+    <table class="tabla-contenido">
+      <thead>
+        <tr>
+          <th>ID Cotización</th>
+          <th>Nombre Empresa</th>
+          <th>Cantidad</th>
+          <th>Total M2</th>
+          <th>Total Precio</th>
+          <th>Estado</th>
+          <th>Descargar</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>054564546</td>
+          <td>Producto 1</td>
+          <td>25</td>
+          <td>5,25</td>
+          <td>$1.000.000</td>
+          <td>En proceso</td>
+          <td><img src="../../../assets/img/pdf.png"></td>
+          <td>
+            <button class="btn-editar">MODIFICAR</button>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>        
+      </tbody>
+    </table>    
+          </div>
+          <div class="modtransporte text">
+            <div class="title">Transporte</div>
+            <button class="btn-agre" routerLink="/agregar-transporte">AGREGAR NUEVO</button>
+            <div class="buscador">
+              <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+              <button id="btn-buscar">BUSCAR</button>
+            </div>
+            <table class="tabla-contenido">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Empresa</th>
+                  <th>Teléfono</th>
+                  <th>Correo</th>
+                  <th>Sector</th>
+                  <th>Cargo Servicio</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Transporte S.A</td>
+                  <td>+56984637294</td>
+                  <td>transSpa@gmail.com</td>
+                  <td>Oriente</td>
+                  <td>$10.500</td>
+                  <td>
+                    <button class="btn-editar" routerLink="/modificar-transporte">MODIFICAR</button>
+                    <button class="btn-borrar">BORRAR</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Empresita S.P</td>
+                  <td>+56984637405</td>
+                  <td>empresita@gmail.com</td>
+                  <td>Poniente</td>
+                  <td>$5.000</td>
+                  <td>
+                    <button class="btn-editar">MODIFICAR</button>
+                    <button class="btn-borrar">BORRAR</button>
+                  </td>
+                </tr>
+             
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <footer>
+
+    <div class="footer-izq">
+  
+      <img src="../../../assets/img/logo-footer.png">
+      <div class="parrafo-footer" ><p>Con 2 años de experiencia fabricando ventanas de la mejor calidad.</p></div>
+      <div class="faq" ><img src="../../../assets/img/faq.png"><a routerLink="/preguntas-frecuentes">Preguntas Frecuentes</a></div>
+  
+    </div>
+    <div class="v-line"></div>
+  
+    <div class="footer-der">
+      <h4>Contáctanos</h4>
+      <ul>
+        <li><img src="../../../assets/img/whatsapp.png">+56 965789532</li>
+        <li><img src="../../../assets/img/correo.png"> <a class="btn-mail" routerLink="/contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-centro"><p>Derechos Reservados Ventanas Técnicas 2023 ©</p></div>
+   </footer>
+</div><!-------wrap------>
+
+<script>  document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+});
+</script>
+  </ion-content>
+

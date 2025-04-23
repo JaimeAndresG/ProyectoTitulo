@@ -1,0 +1,74 @@
+<ion-content> 
+  <div id="wrap">
+  <ion-header>
+    <header>
+      <div id="intranet">    
+         
+        <ul>
+          <li> <!-- BIenvenido : {{logeado.user.username}}   -->  </li>
+          <li >Cerrar Sesion</li>
+          <li><img src="../../../assets/img/logout.png" (click)="logOut()"></li>
+        </ul>
+        <div class="logo-intranet"> <img src="../../../assets/img/logo-footer.png"></div>
+      </div><!------cierre div intranet header-------->
+  
+  </header>
+  </ion-header>
+
+  <div id="contenido">
+    <h1>Agregar Material</h1>
+    <div class="container">
+    
+      <form [formGroup]="material"  (ngSubmit)="insDatos()" >      
+        <div class="form-group">
+          <label for="nombre-empresa">Nombre Material:</label>
+          <input type="text" id="nombre-empresa" placeholder="Ingrese nombre del producto "  formControlName="nom_material">
+        </div>
+      <div class="form-group">
+        <label for="rut-empresa">Descripcion:</label>
+        <input type="text" id="rut-empresa"    placeholder="Ingrese descripcion del producto " formControlName="descripcion">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Tipo:</label>
+        <input type="tel" id="telefono"   placeholder="Ingrese tipo" formControlName="tipo">
+      </div>
+      <div class="form-group">
+        <label for="correo">Precio M2</label>
+        <input type="email" id="correo"   placeholder="el precio del metro cuadrado" formControlName="precio">
+      </div>
+     
+
+      <button type="submit">Agregar </button>
+      <button class="botoncito" routerLink="/admin/">Volver a Material</button>
+    </form>  
+
+
+   
+    
+     </div><!--------cierre container formulario------>
+  
+    
+  </div><!--------CIERRE CONTENIDO-------->
+   <footer>
+
+    <div class="footer-izq">
+  
+      <img src="../../../assets/img/logo-footer.png">
+      <div class="parrafo-footer" ><p>Con 2 años de experiencia fabricando ventanas de la mejor calidad.</p></div>
+      <div class="faq" ><img src="../../../assets/img/faq.png"><a routerLink="/preguntas-frecuentes">Preguntas Frecuentes</a></div>
+  
+    </div>
+    <div class="v-line"></div>
+  
+    <div class="footer-der">
+      <h4>Contáctanos</h4>
+      <ul>
+        <li><img src="../../../assets/img/whatsapp.png">+56 965789532</li>
+        <li><img src="../../../assets/img/correo.png"> <a class="btn-mail" routerLink="/contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer-centro"><p>Derechos Reservados Ventanas Técnicas 2023 ©</p></div>
+   </footer> 
+  </div><!-----CIERRE WRAP------>
+  </ion-content>
+  

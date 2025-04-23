@@ -1,0 +1,162 @@
+<ion-content> 
+  <div id="wrap">
+  <ion-header>
+    <header>
+      <div class="logo" routerLink="/home"> <img src="../../../assets/img/logo-con-letras.png"></div>
+      <div id="menu-adaptado" >
+        <ul class="">
+          <li class="burger" (click)="toggleMenu()"> 
+            <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+          </li>
+        <li class="menu" [class.is-open]="isMenuOpen">
+          <a routerLink="/home" class="menu-item">Inicio</a>
+          <a routerLink="/quienes-somos" class="menu-item">Quiénes somos</a>
+          <a routerLink="/nuestros-trabajos" class="menu-item">Nuestro trabajos</a>
+          <a routerLink="/catalogo" class="menu-item">Catálogo</a>
+          <a routerLink="/registro" class="menu-item">Registrate</a>
+          <a routerLink="/iniciar-sesion" class="menu-item" >Ingresar</a>
+          
+        </li>
+        </ul>     
+       
+      </div><!-------cierre menu adaptado--------->
+      <div class="haztucotizacion" routerLink="/catalogo"><a>Haz tú cotización</a></div>
+     
+  
+  </header>
+  </ion-header>
+  <div id="contenido">
+    <h1>Catálogo Ventanas</h1>
+    <section >     
+    
+      <ul id="contenido-producto">
+          <li>
+            <div class="contenedor-img">
+              <img src="../../../assets/img/ventana-aluminio.png">
+            </div>
+            
+            <h5>Ventana Aluminio</h5>
+            <p>Ventana Termopanel</p>
+            <p>Aluminio básico</p>
+            <button><a routerLink="/cotizacion">Cotizar</a></button>  
+            <hr>
+         
+          </li>
+
+          <li>
+            <div class="contenedor-img">
+              <img src="../../../assets/img/ventana-termo.jpg">
+            </div>
+           
+            <h5>Ventana PVC</h5>
+            <p>Ventana Termopanel</p>
+            <p>Americano klassik</p>
+            <button><a routerLink="/cotizacion">Cotizar</a></button>  
+            <hr>         
+          </li>
+          <li>
+            <div class="contenedor-img">
+              <img src="../../../assets/img/ventanita.jpg">
+            </div>
+            <h5>Ventana Corredera</h5>
+            <p>Ventana Termopanel</p>
+            <p>Nogal</p>
+            <button><a href="">Cotizar</a></button>  
+            
+         
+          </li>
+
+          <li>
+
+            <div class="contenedor-img">
+              <img src="../../../assets/img/Ventana-Monolitica.jpg">
+            </div>
+            
+            <h5>Ventana Monolitica</h5>
+            <p>Americano klassik</p>
+            <p>Blanco Corredera</p>
+            <button><a href="">Cotizar</a></button>  
+            
+         
+          </li>
+
+          <li>
+
+            <div class="contenedor-img">
+              <img src="../../../assets/img/Ventana-Proyectante.jpg">
+            </div>
+           
+            <h5>Ventana Proyectante</h5>
+            <p>Ventana Termopanel</p>
+            <p>Europeo Premium Blanco</p>
+            
+            <button><a href="">Cotizar</a></button>  
+         
+          </li>
+
+          <li>
+            <div class="contenedor-img">
+              <img src="../../../assets/img/Ventana_Celosia.jpg">
+            </div>
+            
+            <h5>Ventana Celosia</h5>
+            <p>Monolítica Stipolite</p>
+            <p>Aluminio Blanco</p>
+            
+            <button><a href="">Cotizar</a></button>           
+          </li>
+
+          <li>
+            <div class="contenedor-img">
+              <img src="../../../assets/img/Ventana_Monolitica_Alumnio.jpg">
+            </div>
+            
+            <h5>Ventana Monolitica </h5>
+            <p>Aluminio Intermedio</p>
+            <p>Titanio Corredera</p>
+           
+            <button><a href="">Cotizar</a></button>            
+          </li>
+
+          <li>
+            <div class="contenedor-img">
+              <img src="../../../assets/img/Ventana_Patio_Door.jpg">
+            </div>
+            
+            <h5>Ventana Patio Door </h5>
+            <p>Ventana Termopanel</p>
+            <p>Americano klassik Blanco</p>
+            
+            <button><a href="">Cotizar</a></button>          
+          </li>
+        </ul>
+
+  
+  </section> 
+      
+</div><!--------cierre contenido-->
+  
+    
+  <footer>
+
+    <div class="footer-izq">
+  
+      <img src="../../../assets/img/logo-footer.png">
+      <div class="parrafo-footer" ><p>Con 2 años de experiencia fabricando ventanas de la mejor calidad.</p></div>
+      <div class="faq" ><img src="../../../assets/img/faq.png"><a routerLink="/preguntas-frecuentes">Preguntas Frecuentes</a></div>
+  
+    </div>
+    <div class="v-line"></div>
+  
+    <div class="footer-der">
+      <h4>Contáctanos</h4>
+      <ul>
+        <li><img src="../../../assets/img/whatsapp.png">+56 965789532</li>
+        <li><img src="../../../assets/img/correo.png"> <a class="btn-mail" routerLink="/contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer-centro"><p>Derechos Reservados Ventanas Técnicas 2023 ©</p></div>
+   </footer> 
+  </div><!--------CIERRE WRAP ------>
+  </ion-content>
+  

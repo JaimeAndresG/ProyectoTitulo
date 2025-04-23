@@ -1,0 +1,120 @@
+<ion-content> 
+  <div id="wrap">
+  <ion-header>
+    <header>
+      <div class="logo" routerLink="/home"> <img src="../../../assets/img/logo-con-letras.png"></div>
+      <div id="menu-adaptado" >
+        <ul class="">
+          <li class="burger" (click)="toggleMenu()"> 
+            <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+          </li>
+        <li class="menu" [class.is-open]="isMenuOpen">
+          <a routerLink="/home" class="menu-item">Inicio</a>
+          <a routerLink="/quienes-somos" class="menu-item">Quiénes somos</a>
+          <a routerLink="/nuestros-trabajos" class="menu-item">Nuestro trabajos</a>
+          <a routerLink="/catalogo" class="menu-item">Catálogo</a>
+          <a routerLink="/registro" class="menu-item">Registrate</a>
+          <a routerLink="/iniciar-sesion" class="menu-item" >Ingresar</a>
+          
+        </li>
+        </ul>     
+       
+      </div><!-------cierre menu adaptado--------->
+      <div class="haztucotizacion" routerLink="/catalogo"><a>Haz tú cotización</a></div>
+     
+  
+  </header>
+  </ion-header>
+
+  <div id="nuestros-trabajos">
+    <h1>Nuestros Trabajos</h1>
+
+
+<div class="flip flip-vertical">
+    <div class="front"><img src="../../../assets/img/ventana-aluminio.png"> </div>
+    <div class="back">
+       <h2>Ventana Aluminio</h2>
+       <p>Topes estanco en corredera para mejor hermeticidad.Cierre lateral izquierdo embutido y manillón en hoja derecha con sistema anticierre.</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front"><img src="../../../assets/img/ventanita.jpg"></div>
+    <div class="back">
+      <h2>Ventana PVC</h2>
+       <p>Corredera de dos hojas móviles con manilla metálica en la hoja derecha. Rodamientos y quincallería europeos que aseguran una excelente calidad.</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" > <img src="../../../assets/img/ventana-termo.jpg" alt=""> </div>
+    <div class="back">
+       <h2>Ventana Termopanel</h2>
+       <p>Disminuye el paso del calor y el ruido a través de una superficie vidriada. La cámara hermética de aire seco y quieto producida entre ambos cristales es la que otorga la gran capacidad aislante al Cristal Termopanel.</p>
+    </div>
+</div>
+
+<div class="flip flip-vertical">
+  <div class="front"><img src="../../../assets/img/ventana-aluminio.png"> </div>
+  <div class="back">
+     <h2>Ventana Aluminio</h2>
+     <p>Topes estanco en corredera para mejor hermeticidad.Cierre lateral izquierdo embutido y manillón en hoja derecha con sistema anticierre.</p>
+  </div>
+</div>
+<div class="flip flip-vertical">
+  <div class="front"><img src="../../../assets/img/ventanita.jpg"></div>
+  <div class="back">
+    <h2>Ventana PVC</h2>
+     <p>Corredera de dos hojas móviles con manilla metálica en la hoja derecha. Rodamientos y quincallería europeos que aseguran una excelente calidad.</p>
+  </div>
+</div>
+<div class="flip flip-vertical">
+  <div class="front" > <img src="../../../assets/img/ventana-termo.jpg" alt=""> </div>
+  <div class="back">
+     <h2>Ventana Termopanel</h2>
+     <p>Disminuye el paso del calor y el ruido a través de una superficie vidriada. La cámara hermética de aire seco y quieto producida entre ambos cristales es la que otorga la gran capacidad aislante al Cristal Termopanel.</p>
+  </div>
+</div>
+<div class="flip flip-vertical">
+  <div class="front" > <img src="../../../assets/img/ventana-termo.jpg" alt="" > </div>
+  <div class="back">
+     <h2>Ventana Termopanel</h2>
+     <p>Disminuye el paso del calor y el ruido a través de una superficie vidriada. La cámara hermética de aire seco y quieto producida entre ambos cristales es la que otorga la gran capacidad aislante al Cristal Termopanel.</p>
+  </div>
+</div>
+<div class="flip flip-vertical">
+  <div class="front" > <img src="../../../assets/img/ventana-termo.jpg" alt=""> </div>
+  <div class="back">
+     <h2>Ventana Termopanel</h2>
+     <p>Disminuye el paso del calor y el ruido a través de una superficie vidriada. La cámara hermética de aire seco y quieto producida entre ambos cristales es la que otorga la gran capacidad aislante al Cristal Termopanel.</p>
+  </div>
+</div>
+
+
+   </div><!--------cierre nuestros trabajos-->  
+     
+   <footer>
+
+    <div class="footer-izq">
+  
+      <img src="../../../assets/img/logo-footer.png">
+      <div class="parrafo-footer" ><p>Con 2 años de experiencia fabricando ventanas de la mejor calidad.</p></div>
+      <div class="faq" ><img src="../../../assets/img/faq.png"><a routerLink="/preguntas-frecuentes">Preguntas Frecuentes</a></div>
+  
+    </div>
+    <div class="v-line"></div>
+  
+    <div class="footer-der">
+      <h4>Contáctanos</h4>
+      <ul>
+        <li><img src="../../../assets/img/whatsapp.png">+56 965789532</li>
+        <li><img src="../../../assets/img/correo.png"> <a class="btn-mail" routerLink="/contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer-centro"><p>Derechos Reservados Ventanas Técnicas 2023 ©</p></div>
+   </footer> 
+   </div><!-------CIERRE WRAP----->
+  
+  </ion-content>
+
+
+
+  
