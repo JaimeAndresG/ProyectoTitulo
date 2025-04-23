@@ -33,7 +33,7 @@ Presentación de la Página "Ventanas Técnicas"
 
 La página Ventanas Técnicas es una plataforma web diseñada para facilitar la cotización de marcos de ventanas, entregando a los usuarios una experiencia eficiente, intuitiva y automatizada. Mediante un flujo simple, el usuario puede seleccionar materiales, generar una cotización personalizada en formato PDF y enviarla directamente a su correo electrónico registrado.
 
-El enfoque principal del sitio es brindar una herramienta funcional para clientes y empresas del rubro, permitiendo cotizar de forma rápida y profesional, manteniendo un historial de operaciones y asegurando una experiencia amigable desde cualquier dispositivo.
+El enfoque principal del sitio es brindar una herramienta funcional para clientes y empresas del rubro, permitiendo cotizar de forma rápida y profesional.
 ![Captura 1](https://github.com/user-attachments/assets/e19ebd00-4872-40d7-b45d-0c6fd762f567)
 
 # Creación de Usuarios:
